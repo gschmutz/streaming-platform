@@ -396,6 +396,7 @@ services:
       com.platys.restapi.url: http://${PUBLIC_IP}:18630/collector/restapi
     ports:
       - 18630:18630
+      - 28500:28500
     environment:
       SDC_OFFSET_DIRECTORY: /data/custom-offset-el
       SDC_JAVA_OPTS: -Xmx2g -Xms2g
